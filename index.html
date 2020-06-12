@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a:visited, a:hover, a:focus {
+    text-decoration: none !important;
+    color: #000;
+    
+}
     .center{
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
         display: block;
+        width: 50%;
+        text-align: center;
     }
 input{
     border-width:1px;
@@ -12,19 +21,22 @@ input{
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-top:auto !important;
-    width: 500px;
-    height: 35px;
+    margin-top:20px !important;
+    width: 500px !important;
+    height: 40px;
     padding-left: 20px;
-    
+    text-align: left !important;
+    position: relative;
 }
+
 img{
-    padding-top: 200px;
+    padding-top: 10%;
+    width: 260px !important;
+   
 }
 #search{
  width:110px; 
  height: 40px;
- margin-left: 600px;
   }
 #lucky{
     widows: 120px; 
@@ -32,8 +44,6 @@ height: 40px;
 margin-left: 20px;
 }
 #search,#lucky{
-    -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   margin-top: 50px;
   border-style: hidden;
   border-radius: 5%;
@@ -42,32 +52,66 @@ margin-left: 20px;
     padding-right:100px;
 }
 #images{
-    padding-right: 70;
-margin-right: 70;
+    padding-right: 100;
+
 }
 .topright{
-    display: inline-block;
-    position: absolute;
+    position:fixed;
+    float: right;
+    text-align: right;
     right: 0;
-    top: 0;
-    
 }
-.cnmargin{
-    margin-left: 570px;
-}
+.bottom{
+    position:fixed;
+ bottom: 0px;
+ background-color: rgb(212, 208, 208);
+ width:100%;
+ text-align: left;
+ display:inline-block;
+ white-space: 10px;
+padding-top: 10px;
+padding-bottom:10px;
+margin-left: 0%;
 
+}
+.topleft{
+    display:aa;
+}
+.spacing{
+    margin-left: 20px;
+}
+#images{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 </style>
 <head>
-
+<title>Alvins google-homepage</title>
 </head>
 <body>
-    <p class="topright" id="gmail"> <a href=""> Gmail   </a> </p>  
-    <p class="topright" id="images"> <a href="">   Images </a>  </p>
+    <div>
+    <div>
+        <a href="">About</a>
+        <a href="" class="spacing">Store</a>
+    </div>
+    <div class="topright" id="images"> 
+        <a href="">   Gmail</a>  
+        <a href="" id="images"> Images   </a>   
+    </div>
+    </div>
 <img class="center" src="media/google-logo.png" > 
- <input class="center"  text" placeholder="Search google or input URL">
- <div id="btns" >
-   <button id="search" style="margin-top: 20px;">Google Search</button> 
-   <button id="lucky" >I'm Feeling Lucky</button>
- <p class="cnmargin">Google offered in: <a href="">English</a></p>
+<div>
+ <input class="center" type="text" >
 </div>
-</body>
+  <div class="center"> <button id="search" style="margin-top: 20px;">Google Search</button> 
+   <button id="lucky" >I'm Feeling Lucky</button>
+  </div>
+ <p class="center" style="margin-top: 20px;">Google offered in: <a href="">English</a></p>
+<div class="bottom">
+ <a href="" class="spacing">Advertising </a>
+ <a href="" class="spacing">Buisness </a>
+  <a href="" class="spacing">About</a>
+<a href="" class="spacing"> How search works</a> 
+</div>
+</div>
+</body> 
